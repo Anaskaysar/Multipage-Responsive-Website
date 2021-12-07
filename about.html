@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>University Website Design</title>
+
+    <!-- StyleSheet -->
+    <link rel='stylesheet' href='./style/style.css'>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <!-- icon cdn -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"> <img src="./images/logo.png" alt=""> </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li> <a href="index.html">Home</a> </li>
+                    <li> <a href="about.html">About</a> </li>
+                    <li> <a href="course.html">Course</a> </li>
+                    <li> <a href="blog.html">Blog</a> </li>
+                    <li> <a href="contact.html">Contact</a> </li>   
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>About Us</h1>      
+    </section>
+
+    <!-- About Us Content  -->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the world's largest university</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur neque eius aliquam ratione veniam explicabo optio. Cumque, molestias vero optio sapiente aliquid, iusto nihil facere qui, iste veniam maiores commodi laborum dolore suscipit voluptatibus. Ab facilis nemo incidunt reprehenderit, recusandae non reiciendis repellendus quas accusamus quae dolores blanditiis voluptates dicta quo quis, suscipit cum quod vitae illum architecto aut, ducimus odit. Mollitia doloribus quos harum tempora quam modi consequatur illo corrupti cumque voluptatibus, earum deleniti at reiciendis officiis accusantium ut voluptas dolores adipisci, dolorem pariatur nemo culpa repellendus. Temporibus velit exercitationem id non esse maxime quidem tenetur quo eveniet et?</p>
+                <a href="" class="about-btn hero-btn"> Explore Now</a>
+            </div>
+            <div class="about-col">
+                <img src="images/about.jpg" alt="">
+            </div>
+        </div>
+
+    </section>
+
+   
+
+
+
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eligendi doloribus odio ea facilis, dolor ipsa eaque qui vitae <br> modi laboriosam incidunt laudantium quas perferendis exercitationem temporibus illo.</p>
+        <div class="icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+        <p>Made By <i class="far fa-heart"></i> Kaysarul Anas</p>
+    </section>
+    <!-- Script  -->
+
+    <script>
+        // JS for Toggle Menu 
+        var navlinks=document.getElementById('navLinks');
+        console.log(navliniks)
+        function showmenu(){
+            navlinks.style.right="0";
+        }
+        function hidemenu(){
+            navlinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
